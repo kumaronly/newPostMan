@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "3be13fcd-9ef3-4f1d-8dcc-7c2371c9a073",
+		"name": "New Collection Copy 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25818332"
+	},
+	"item": [
+		{
+			"name": "get all data from gsheet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prasanta Behera\",\r\n    \"age\":32,\r\n    \"salary\":32000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/google/sheet/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"google",
+						"sheet",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"domainName\":\"cxp-remarksmanagement-domain\",\r\n    \"codeConfigPNO\":\"NA\",\r\n    \"vastId\":\"B6VV\",\r\n    \"managerSignoff\":\"Nagaraju Koppuravuri V S S\",\r\n    \"onshoreDeliveryLead\":\"Murali Muniyan\",\r\n    \"vziDeliveryLead\":\"Nagaraju Koppuravuri V S S\",\r\n    \"projectNumberName\":\"PR 123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/google/sheet/data/update/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"google",
+						"sheet",
+						"data",
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
